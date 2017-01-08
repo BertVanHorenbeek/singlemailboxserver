@@ -11,4 +11,4 @@ ENV user=user pass=pass
 
 EXPOSE 110 25
 
-CMD twistd --nodaemon singlemailboxserver --pop3port=110 --smtpport=25  --pop3username=${user} --pop3password=${pass} --smtplisten=0.0.0.0
+CMD twistd --nodaemon --pidfile= singlemailboxserver --pop3port=110 --smtpport=25  --pop3username=${user} --pop3password=${pass} --smtplisten=0.0.0.0
